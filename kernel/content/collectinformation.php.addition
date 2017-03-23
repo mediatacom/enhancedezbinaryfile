@@ -37,10 +37,10 @@
 			foreach ( $fileAttachments as $attacharray) {
 				$filedata = chunk_split(base64_encode(eZFile::getContents($attacharray[0])));
 				$message .= "\n\n\n--{$mime_boundary}\n" .
-					"Content-Type: " . $attacharray[2] . ";\n" .
+					"Content-Type: " . $attacharray[2] . ";" .
 					" name=\"" . $attacharray[1] . "\"\n" .
 					"Content-Transfer-Encoding: base64\n" .
-					"Content-Disposition: inline;\n" .
+					"Content-Disposition: inline;" .
 					" filename=\"" . $attacharray[1] . "\"\n\n" .
 					$filedata . "\n";
 	
