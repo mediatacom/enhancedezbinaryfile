@@ -48,6 +48,6 @@
 			$message .= "--{$mime_boundary}--\n\n\n";
 	
 			$templateResult = $message;
-			$mail->setContentType( "multipart/mixed;boundary=\"$mime_boundary\"",false,false,false );
+			$mail->setContentType( 'multipart/mixed;boundary="'.$mime_boundary.'"',false,false,false );
 		}
 //END ENHANCED BINARY EXTENSION MAIL CODE ADDITION
