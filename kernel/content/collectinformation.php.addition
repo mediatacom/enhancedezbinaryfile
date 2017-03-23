@@ -21,7 +21,7 @@
 			}
 		}
 		if (count($fileAttachments) != 0) {
-			$mime_boundary = "==Multipart_Boundary_" . md5(time());
+			$mime_boundary = "=_Multipart_Boundary_" . md5(time());
 	
 			//Plain Text part of Message
 	
@@ -48,6 +48,6 @@
 			$message .= "--{$mime_boundary}--\n\n\n";
 	
 			$templateResult = $message;
-			$mail->setContentType( "multipart/mixed;boundary=$mime_boundary",false,false,false );
+			$mail->setContentType( "multipart/mixed;boundary=\"$mime_boundary\"",false,false,false );
 		}
 //END ENHANCED BINARY EXTENSION MAIL CODE ADDITION
