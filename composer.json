@@ -1,0 +1,19 @@
+{
+  "name": "mediatacom/enhancedezbinaryfile",
+  "description": "Enhanced eZBinaryfile datatype",
+  "type": "ezpublish-legacy-extension",
+  "license": "GNU General Public License (GPL)",
+  "authors": [
+    {
+      "name": "leidentech",
+      "email": "info@leidentech.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "ezsystems/ezpublish-legacy-installer": "*"
+  },
+  "extra": {
+    "ezpublish-legacy-extension-name": "enhancedezbinaryfile"
+  }
+}
